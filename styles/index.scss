@@ -1,0 +1,136 @@
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+
+body {
+  background: #DDDDDD;
+    height: 100%;
+    width: 100%;
+   background-image: url(https://static.pexels.com/photos/29435/landscape-sky-night-stars-29435.jpg); 
+  background-size: 100% 100%;
+  background-repead: no-repead;
+  overflow: visible;
+  
+}
+
+h1{
+    text-align: center;
+    margin-top: 5%;
+    color: #fff;
+  font-family: 'Noto Serif', serif;
+  opacity: 0.6;
+  
+}
+
+.outlayer{
+    margin-top: 5%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 70%;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+.setup{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  padding: 0px 0px 0px 0px 0px;
+  margin-top: 0px;
+}
+
+.break{
+    opacity: 1;
+    padding: 0 80px;
+  font-size: 25px;
+  color: white;
+  padding: 0px 0px 0px 0px 0px;
+  margin-top: 0px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.timeSetUp{
+    display: inline;
+    padding: 0 80px;
+    font-size: 25px;
+  color: white;
+  padding: 0px 0px 0px 0px 0px;
+  margin-top: 0px;
+  font-family: 'Roboto Slab', serif;
+  
+}
+
+span{
+    font-size: 22px;
+    color: #fff;
+    
+
+
+  
+}
+
+.fa{
+    font-size: 1.4em;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.clock{
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+    border:6px solid 	#9999FF;
+    opacity: 0.7;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+    cursor: pointer;
+    z-index: 20;
+    overflow: hidden;
+  font-family: 'Graduate', cursive;
+
+}
+
+.clock h2{
+    
+    font-family: 'Bitter', serif;
+    font-size: 2.5em;
+    margin-top: 80px;
+    color: #fff;
+}
+
+#dy{
+    margin: 0;
+    position: absolute;
+    opacity: 0.4;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    background-color: #CCDDFF; 
+    /* background-color: #3f2b36; */
+    z-index: -1;
+}
+
+.stop{
+  color: white;
+  font-size: 20px;
+  height: 30px;
+  font-family:'Graduate', cursive;
+  margin-top:10px;
+  margin-bottom:5px;
+}
+#start-stop{
+  cursor: pointer;
+}
+.time-style{
+  font-size: 40px;
+  
+}
