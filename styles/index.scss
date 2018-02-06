@@ -1,136 +1,279 @@
-/**
- * index.scss
- * - Add any styles you want here!
- */
-
-body {
-  background: #DDDDDD;
+html {
+    width: 100%;
     height: 100%;
-    width: 100%;
-   background-image: url(https://static.pexels.com/photos/29435/landscape-sky-night-stars-29435.jpg); 
-  background-size: 100% 100%;
-  background-repead: no-repead;
-  overflow: visible;
+}
+
+body{
+  margin: 0px;
+}
   
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
 }
 
-h1{
-    text-align: center;
-    margin-top: 5%;
-    color: #fff;
-  font-family: 'Noto Serif', serif;
-  opacity: 0.6;
-  
-}
 
-.outlayer{
-    margin-top: 5%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    height: 70%;
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-}
-.setup{
-    width: 100%;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-  padding: 0px 0px 0px 0px 0px;
-  margin-top: 0px;
-}
-
-.break{
-    opacity: 1;
-    padding: 0 80px;
-  font-size: 25px;
-  color: white;
-  padding: 0px 0px 0px 0px 0px;
-  margin-top: 0px;
-  font-family: 'Roboto Slab', serif;
-}
-
-.timeSetUp{
-    display: inline;
-    padding: 0 80px;
-    font-size: 25px;
-  color: white;
-  padding: 0px 0px 0px 0px 0px;
-  margin-top: 0px;
-  font-family: 'Roboto Slab', serif;
-  
-}
-
-span{
-    font-size: 22px;
-    color: #fff;
-    
-
-
-  
-}
-
-.fa{
-    font-size: 1.4em;
-    color: #fff;
-    cursor: pointer;
-    margin: 0 10px;
-}
-
-.clock{
-    width: 300px;
-    height: 300px;
-    border-radius: 10%;
-    border:6px solid 	#9999FF;
-    opacity: 0.7;
-    text-align: center;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 30px;
-    cursor: pointer;
-    z-index: 20;
-    overflow: hidden;
-  font-family: 'Graduate', cursive;
-
-}
-
-.clock h2{
-    
-    font-family: 'Bitter', serif;
-    font-size: 2.5em;
-    margin-top: 80px;
-    color: #fff;
-}
-
-#dy{
+.navtop {
+    list-style-type: none;
     margin: 0;
-    position: absolute;
-    opacity: 0.4;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
     width: 100%;
-    background-color: #CCDDFF; 
-    /* background-color: #3f2b36; */
+    height: 40px;
+    background-color: rgba(1,30,100,0.2);
+    border-bottom: solid 2px rgba(122,134,180,0.4);
+    box-shadow:0px 3px 0px rgba(122,134,180,0.7);
+    
+  z-index: 1;
+}
+
+.nav-left {
+    float: left;
+    text-decoration: none;
+    margin-left:5%;
+    font-family: 'Righteous', cursive;
+    font-size:1.6em;
+    margin-top:3px;
+    
+}
+
+ .nav-right {
+    float:right;
+    display: block;
+    margin-right: 20px;
+    margin-top: 10px;
+    padding-right:20px;
+    font-size: 1.2em;
+   
+}
+
+
+.title-section{
+ position:absolute;
+ font-family:'Poppins', sans-serif;
+ top: 30px;
+ left:25px;
+ right: 25px;
+ height: 93px;
+ box-shadow: 0px 3px 0px rgba(220,220,220,0.4);
+
+}
+
+
+.title-list{
+  list-style-type: none;
+  margin-top: 140px;
+  margin-left:55px;
+  margin-right:55px;
+  padding-left:0px;
+  padding-top:15px;
+  text-align: center;
+  height:170px;
+  font-size: 1.1em;
+  font-family:'Poppins', sans-serif;
+  
+}
+
+a{text-decoration:none}
+
+.hover2:hover .hover2-down{
+  display:block;
+}
+.hover4:hover .hover41-down{
+  display:block;
+}
+.hover4:hover .hover42-down {
+  display:block;
+}
+
+.hover1, .hover2, .hover3, .hover4, .hover5{
+  cursor:pointer;
+
+  margin-top:4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+
+}
+
+.hover2-down, .hover41-down, .hover42-down{
+  display:none;
+}
+
+.hover1:link {
+  color: white;
+  text-decoration:none;
+}
+
+.hover1:hover, .hover2:hover, .hover3:hover,.hover4:hover, .hover5:hover {
+    padding-top: 0px;
+    padding-bottom: 4px;
+    text-decoration:none;
+    }
+a{
+color: white ;
+}
+
+
+
+.intro-header {
+    width: 1060px;
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(https://github.com/KyleYK/Cloud-Files/blob/master/p3.jpg?raw=true);
+    background-size: cover;
+    height: 530px;
+    overflow:hidden;
+    box-shadow:4px 6px 5px #565f71;
+}
+
+.dictionary{
+  width:270px;
+  height:465px; 
+  margin-top:54px;
+  margin-left:10%;
+  position: relative;
+  float:left;
+  overflow: hidden;
+  box-shadow: -5px 6px 3px rgba(76,12,5,0.5);
+  border-radius: 10px;
+  z-index: 0;
+ 
+}
+.dictionary::before{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(https://github.com/KyleYK/Cloud-Files/blob/master/p3.jpg?raw=true);
+    background-size: 1060px 530px;
+    background-position: 10% -54px;
+   
+    -webkit-filter: blur(8px);
+    filter: blur(8px);
+   
     z-index: -1;
 }
 
-.stop{
-  color: white;
-  font-size: 20px;
-  height: 30px;
-  font-family:'Graduate', cursive;
-  margin-top:10px;
-  margin-bottom:5px;
+.clock{
+  margin-right: 60px;
+  margin-top: 80px;
+  top: 8px;
+  float:right;
+  width: 400px;
+  height:100px;
+  font-size: 1.6em;
+  text-shadow: 1px -1px 1px rgba(76,12,5,0.5);
+  color:rgba(93,124,299,0.5);
 }
-#start-stop{
-  cursor: pointer;
-}
-.time-style{
-  font-size: 40px;
+.times{
+  display: inline-block;
+  width:120px;
+  height:80px;
   
+}
+.times-digits{
+  font-family:'Graduate', cursive;
+
+}
+.times-zones{
+ font-family: 'Poppins', sans-serif;
+}
+.main-body{
+  height:1600px;
+  width: 1060px;
+  background-color: #E0E0E0;
+  margin: 10px auto;
+
+}
+
+.page-one{
+  background-color: white;
+  margin-bottom:15px;
+  width: 820px;
+  overflow:auto;
+  box-shadow:4px 6px 5px #565f71;
+  
+  
+}
+.pages{
+  float:left;
+  width:820px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.body-right{
+  float: right;
+  height: 400px;
+  width: 222px;
+  background-color: #BFC9CA;
+  box-shadow:4px 6px 5px #565f71;
+  
+}
+
+#statement{
+  width: 450px;
+  margin-left:25px;
+  float: left;
+  text-align:justify;
+  text-justify:newspaper;
+  padding: 20px;
+} 
+  
+
+#headshot{
+  float:right;
+  position:relative;
+  margin-top:15px;
+  margin-bottom:15px;
+    margin-right:25px;
+  height: 250px;
+  width: 250px;
+  
+}
+#headshot1{
+  position:absolute;
+  margin-top:0px;
+  margin-left:0px;
+  background: url(https://raw.githubusercontent.com/KyleYK/Cloud-Files/cb4545df150521f0e01ec21f18b83f721cabf71e/p31.png) no-repeat;
+  background-position: -5px -10px;
+  background-size: 260px 265px;
+  width: 250px;
+  height: 250px;
+  border-radius:50%;
+   box-shadow:0 0 20px 10px rgba(255,255,255,.6) inset;
+ 
+}
+#headshot2{
+  position:absolute;
+  border-radius:50%;
+  overflow:hidden;
+}
+
+
+
+.external-web{
+  border:solid;
+  
+}
+
+.external-web>div{
+  font-size:1.4em;
+  margin-top:5px;
+}
+
+.footer{
+  height: 80px;
+  background-color:green;
 }
