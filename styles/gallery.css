@@ -1,0 +1,47 @@
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 110vh;
+}
+.hero--8 {
+  background: linear-gradient(135deg, #b993d8 30%, #8ca6dc 70%);
+}
+
+
+
+.lb_gl{margin-bottom: 30px; height:380px; margin-bottom: -40px;}
+.container{width: 820px;margin:0 auto;position: center;}
+.pictureSlider{height: 0px; margin-bottom: -10px;}
+.poster-item{background: #fff;height: 300px;width:300px;border-radius: 10px;padding:25px 8px 0px 8px;
+	transition: all 0.5s;cursor: default;
+	-moz-transition: all 0.5s;cursor: default;
+	-webkit-transition: all 0.5s;cursor: default;
+	-o-transition: all 0.5s;cursor: default;
+}
+.turn_3d{font-family: Times New Roman; text-align: center;color: #fff;font-weight: 400;font-size: 23px;padding: 8px 0;}
+.xxgy{font-size: 30px;font-weight: 900;padding-left: 10px;}
+.poster-item .say{font-size: 18px;margin-bottom: 5px;padding-left: 10px;}
+.students_star{padding:10px 10px 0 10px ;}
+.cell_list{margin-bottom: 10px;color:#999;font-size: 15px;overflow: hidden;}
+.darks{color: #000;padding-left: 10px;}
+.zwjs{border-top:1px solid #d0cddb;line-height: 26px;padding-top: 5px;color: #999;font-size: 12px;max-height: 84px;overflow: hidden;}
+.for_btn{position: relative;height:214px;overflow:hidden}
+.in_page{position: absolute;left: 50%;top:50%;width:40px;height: 40px;margin-left: -20px;margin-top: -20px;}
+.in_page>img{width: 40px;height: 40px;}
+
+.check_more{width: 180px;height: 50px;line-height: 50px;text-align: center;color:#fff;background: #bc241d;margin:0 auto;display: block;}
+
+body{font-family: Times,Arial;margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6,ol,li,ul,p,dl,dt,dd{padding: 0;margin:0}
+ul,ol,li,dl,dt,dd{text-decoration: none;list-style: none}
+.lf{float: left}
+.rt{float: right}
+.clear{clear:both}
+.ovh{overflow: hidden}
+a{  color:#303030;  text-decoration:none;  }
+a:hover{  text-decoration:none;  }
+input{border:none;outline:none;}
+img{border:none}
+
+
