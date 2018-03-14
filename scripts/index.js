@@ -7,8 +7,8 @@ $(document).ready(function(){
  
  var hours = new Date().getUTCHours();
  var minutes=new Date().getUTCMinutes();
- var pacificHours=hours-8;
- var easternHours=hours-5;
+ var pacificHours=hours-7;
+ var easternHours=hours-4;
  var beijingHours=hours+8;
  if (pacificHours<0){
  	pacificHours+=24;
